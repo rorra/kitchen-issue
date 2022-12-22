@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/Users/rod/a/kitchen-issue/my_cookbook/.kitchen/docker_id_rsa"
+image_id: sha256:48cb068f9e34e19365e4a7d913c9f56a7a129f0a71b9a77606c7d10f984948e9
+container_id: bef49a74a14b0b3769843659b90f3d2ecb0f02eefee78b4531a3c0641883b774
+hostname: localhost
+port: 58583
+last_action: create
+last_error: Kitchen::ShellOut::ShellCommandFailed

@@ -1,0 +1,121 @@
+I, [2022-12-22T00:02:04.085254 #74430]  INFO -- default-centos-71: -----> Creating <default-centos-71>...
+I, [2022-12-22T00:02:05.943043 #74430]  INFO -- default-centos-71: [SSH] Established
+I, [2022-12-22T00:02:05.949259 #74430]  INFO -- default-centos-71: Finished creating <default-centos-71> (0m1.86s).
+I, [2022-12-22T00:02:05.949440 #74430]  INFO -- default-centos-71: -----> Converging <default-centos-71>...
+I, [2022-12-22T00:02:06.418617 #74430]  INFO -- default-centos-71: Preparing files for transfer
+I, [2022-12-22T00:02:06.422277 #74430]  INFO -- default-centos-71: Policy lock file doesn't exist, running `/usr/local/bin/chef-cli install` for Policyfile /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb...
+I, [2022-12-22T00:02:06.770712 #74430]  INFO -- default-centos-71: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:86:in `block in materialize': Could not find racc-1.6.1 in any of the sources (Bundler::GemNotFound)
+I, [2022-12-22T00:02:06.771212 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `map!'
+I, [2022-12-22T00:02:06.771256 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `materialize'
+I, [2022-12-22T00:02:06.771276 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:170:in `specs'
+I, [2022-12-22T00:02:06.771296 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:237:in `specs_for'
+I, [2022-12-22T00:02:06.771312 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:226:in `requested_specs'
+I, [2022-12-22T00:02:06.771324 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:101:in `block in definition_method'
+I, [2022-12-22T00:02:06.771336 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:20:in `setup'
+I, [2022-12-22T00:02:06.771349 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler.rb:149:in `setup'
+I, [2022-12-22T00:02:06.771364 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `block in <top (required)>'
+I, [2022-12-22T00:02:06.771378 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:136:in `with_level'
+I, [2022-12-22T00:02:06.771432 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:88:in `silence'
+I, [2022-12-22T00:02:06.771446 #74430]  INFO -- default-centos-71: 	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `<top (required)>'
+I, [2022-12-22T00:02:06.771459 #74430]  INFO -- default-centos-71: 	from /usr/local/bin/chef-cli:in `require'
+E, [2022-12-22T00:02:06.783814 #74430] ERROR -- default-centos-71: Converge failed on instance <default-centos-71>.
+E, [2022-12-22T00:02:06.783940 #74430] ERROR -- default-centos-71: ------Exception-------
+E, [2022-12-22T00:02:06.783955 #74430] ERROR -- default-centos-71: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2022-12-22T00:02:06.783966 #74430] ERROR -- default-centos-71: Message: Expected process to exit with [0], but received '1'
+---- Begin output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+STDOUT: 
+STDERR: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:86:in `block in materialize': Could not find racc-1.6.1 in any of the sources (Bundler::GemNotFound)
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `map!'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `materialize'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:170:in `specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:237:in `specs_for'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:226:in `requested_specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:101:in `block in definition_method'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:20:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler.rb:149:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `block in <top (required)>'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:136:in `with_level'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:88:in `silence'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `<top (required)>'
+	from /usr/local/bin/chef-cli:in `require'
+---- End output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+Ran /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist returned 1
+E, [2022-12-22T00:02:06.783994 #74430] ERROR -- default-centos-71: ----------------------
+E, [2022-12-22T00:02:06.784004 #74430] ERROR -- default-centos-71: ------Backtrace-------
+E, [2022-12-22T00:02:06.784013 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-12-22T00:02:06.784022 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-12-22T00:02:06.784030 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/policyfile.rb:81:in `compile'
+E, [2022-12-22T00:02:06.784043 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:296:in `block in update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.784053 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `synchronize'
+E, [2022-12-22T00:02:06.784063 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.784075 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:274:in `prepare_json'
+E, [2022-12-22T00:02:06.784083 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:45:in `populate'
+E, [2022-12-22T00:02:06.784091 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_base.rb:308:in `create_sandbox'
+E, [2022-12-22T00:02:06.784100 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_infra.rb:49:in `create_sandbox'
+E, [2022-12-22T00:02:06.784108 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/base.rb:72:in `call'
+E, [2022-12-22T00:02:06.784119 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-12-22T00:02:06.784128 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-12-22T00:02:06.784136 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-12-22T00:02:06.784144 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-12-22T00:02:06.784158 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:523:in `action'
+E, [2022-12-22T00:02:06.784167 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-12-22T00:02:06.784175 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-12-22T00:02:06.784183 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-12-22T00:02:06.784191 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-12-22T00:02:06.784200 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `each'
+E, [2022-12-22T00:02:06.784207 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-12-22T00:02:06.784217 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2022-12-22T00:02:06.784225 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-12-22T00:02:06.784234 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-12-22T00:02:06.784242 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-12-22T00:02:06.784250 #74430] ERROR -- default-centos-71: ----End Backtrace-----
+E, [2022-12-22T00:02:06.784257 #74430] ERROR -- default-centos-71: ---Nested Exception---
+E, [2022-12-22T00:02:06.784265 #74430] ERROR -- default-centos-71: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2022-12-22T00:02:06.784273 #74430] ERROR -- default-centos-71: Message: Expected process to exit with [0], but received '1'
+---- Begin output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+STDOUT: 
+STDERR: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:86:in `block in materialize': Could not find racc-1.6.1 in any of the sources (Bundler::GemNotFound)
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `map!'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `materialize'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:170:in `specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:237:in `specs_for'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:226:in `requested_specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:101:in `block in definition_method'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:20:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler.rb:149:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `block in <top (required)>'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:136:in `with_level'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:88:in `silence'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `<top (required)>'
+	from /usr/local/bin/chef-cli:in `require'
+---- End output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+Ran /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist returned 1
+E, [2022-12-22T00:02:06.784287 #74430] ERROR -- default-centos-71: ----------------------
+E, [2022-12-22T00:02:06.784295 #74430] ERROR -- default-centos-71: ------Backtrace-------
+E, [2022-12-22T00:02:06.784303 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-12-22T00:02:06.784311 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-12-22T00:02:06.784319 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/policyfile.rb:81:in `compile'
+E, [2022-12-22T00:02:06.784326 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:296:in `block in update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.784334 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `synchronize'
+E, [2022-12-22T00:02:06.784342 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.784350 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:274:in `prepare_json'
+E, [2022-12-22T00:02:06.784359 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:45:in `populate'
+E, [2022-12-22T00:02:06.784367 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_base.rb:308:in `create_sandbox'
+E, [2022-12-22T00:02:06.784375 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_infra.rb:49:in `create_sandbox'
+E, [2022-12-22T00:02:06.784383 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/base.rb:72:in `call'
+E, [2022-12-22T00:02:06.784390 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-12-22T00:02:06.784401 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-12-22T00:02:06.784409 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-12-22T00:02:06.784417 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-12-22T00:02:06.784424 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:523:in `action'
+E, [2022-12-22T00:02:06.784432 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-12-22T00:02:06.784440 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-12-22T00:02:06.784448 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-12-22T00:02:06.784456 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-12-22T00:02:06.784474 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `each'
+E, [2022-12-22T00:02:06.784482 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-12-22T00:02:06.784490 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2022-12-22T00:02:06.784510 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-12-22T00:02:06.784518 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-12-22T00:02:06.784526 #74430] ERROR -- default-centos-71: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-12-22T00:02:06.784567 #74430] ERROR -- default-centos-71: ----End Backtrace-----

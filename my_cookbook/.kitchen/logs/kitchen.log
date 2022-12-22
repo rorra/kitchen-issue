@@ -1,0 +1,233 @@
+I, [2022-12-22T00:02:02.274729 #74430]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.5.0)
+I, [2022-12-22T00:02:04.085178 #74430]  INFO -- Kitchen: -----> Creating <default-centos-71>...
+I, [2022-12-22T00:02:04.594875 #74430]  INFO -- Kitchen: #1 [internal] load build definition from Dockerfile-kitchen20221222-74430-13vkurm
+I, [2022-12-22T00:02:04.595135 #74430]  INFO -- Kitchen: #1 sha256:3e2d659c8af68d8f1369d512765f15ef7346661be13981221101c7ace6ce3532
+I, [2022-12-22T00:02:04.595192 #74430]  INFO -- Kitchen: #1 transferring dockerfile: 1.55kB done
+I, [2022-12-22T00:02:04.595535 #74430]  INFO -- Kitchen: #1 DONE 0.0s
+I, [2022-12-22T00:02:04.595957 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.596077 #74430]  INFO -- Kitchen: #2 [internal] load .dockerignore
+I, [2022-12-22T00:02:04.596128 #74430]  INFO -- Kitchen: #2 sha256:b8d2b64e9472874b36b71e6c167d1cbe6e8644c6e09d6a4ed04bbf47fb47feb8
+I, [2022-12-22T00:02:04.596184 #74430]  INFO -- Kitchen: #2 transferring context: 2B done
+I, [2022-12-22T00:02:04.596274 #74430]  INFO -- Kitchen: #2 DONE 0.0s
+I, [2022-12-22T00:02:04.596316 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.596356 #74430]  INFO -- Kitchen: #3 [internal] load metadata for docker.io/library/centos:7
+I, [2022-12-22T00:02:04.596398 #74430]  INFO -- Kitchen: #3 sha256:30875b35a89c8e8a29cd7cf120689bb68cdab8d769419707e07138dfe977d237
+I, [2022-12-22T00:02:04.596439 #74430]  INFO -- Kitchen: #3 DONE 0.0s
+I, [2022-12-22T00:02:04.596480 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.596523 #74430]  INFO -- Kitchen: #4 [ 1/16] FROM docker.io/library/centos:7
+I, [2022-12-22T00:02:04.596573 #74430]  INFO -- Kitchen: #4 sha256:eccdc23ae33ff032265281cdcd61b6bcb08837a6e55df3e7dcb5aef332534337
+I, [2022-12-22T00:02:04.596614 #74430]  INFO -- Kitchen: #4 DONE 0.0s
+I, [2022-12-22T00:02:04.596654 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.596705 #74430]  INFO -- Kitchen: #12 [ 9/16] RUN mkdir -p /home/kitchen/.ssh
+I, [2022-12-22T00:02:04.596751 #74430]  INFO -- Kitchen: #12 sha256:1aa5d78b47b78d77b57f11306ca6dad86a1c1738f695155cd162f1813d13b733
+I, [2022-12-22T00:02:04.596791 #74430]  INFO -- Kitchen: #12 CACHED
+I, [2022-12-22T00:02:04.596836 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.596887 #74430]  INFO -- Kitchen: #15 [12/16] RUN touch /home/kitchen/.ssh/authorized_keys
+I, [2022-12-22T00:02:04.596933 #74430]  INFO -- Kitchen: #15 sha256:79791a2adadd81a452f94f476c8a7f66379871b7469fa88d427deb48d3dfeea9
+I, [2022-12-22T00:02:04.596973 #74430]  INFO -- Kitchen: #15 CACHED
+I, [2022-12-22T00:02:04.597017 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.597063 #74430]  INFO -- Kitchen: #16 [13/16] RUN chown kitchen /home/kitchen/.ssh/authorized_keys
+I, [2022-12-22T00:02:04.597103 #74430]  INFO -- Kitchen: #16 sha256:8c00c61c4056db1d6e3dacd2f461927a1848fc5d24fb3d5d4d6c9b29627cbf99
+I, [2022-12-22T00:02:04.597138 #74430]  INFO -- Kitchen: #16 CACHED
+I, [2022-12-22T00:02:04.597177 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.597215 #74430]  INFO -- Kitchen: #14 [11/16] RUN chmod 0700 /home/kitchen/.ssh
+I, [2022-12-22T00:02:04.597256 #74430]  INFO -- Kitchen: #14 sha256:9ac942ff2b46016e11a930a5def15c55ccd79ab7999f6c6ee517cd3221c2c738
+I, [2022-12-22T00:02:04.597297 #74430]  INFO -- Kitchen: #14 CACHED
+I, [2022-12-22T00:02:04.597331 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.597371 #74430]  INFO -- Kitchen: #11 [ 8/16] RUN echo "Defaults !requiretty" >> /etc/sudoers.d/kitchen
+I, [2022-12-22T00:02:04.597414 #74430]  INFO -- Kitchen: #11 sha256:933118ee5d05b54b234ec68e4a89d890cef1757646de2f3f1097d3eeb6b2ebae
+I, [2022-12-22T00:02:04.597447 #74430]  INFO -- Kitchen: #11 CACHED
+I, [2022-12-22T00:02:04.597490 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.597529 #74430]  INFO -- Kitchen: #10 [ 7/16] RUN echo "kitchen ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/kitchen
+I, [2022-12-22T00:02:04.597568 #74430]  INFO -- Kitchen: #10 sha256:d63cb7c72fe34869fe1d61e8d4b1bdf027772da08f9152731c66463f8fffc7a4
+I, [2022-12-22T00:02:04.597602 #74430]  INFO -- Kitchen: #10 CACHED
+I, [2022-12-22T00:02:04.597640 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.597707 #74430]  INFO -- Kitchen: #9 [ 6/16] RUN if ! getent passwd kitchen; then                   useradd -d /home/kitchen -m -s /bin/bash -p '*' kitchen;                 fi
+I, [2022-12-22T00:02:04.597746 #74430]  INFO -- Kitchen: #9 sha256:5821258a1c8d7caae5ebab24d2dcdc7008439eda2c69942241ca4f8109ba7b1e
+I, [2022-12-22T00:02:04.600453 #74430]  INFO -- Kitchen: #9 CACHED
+I, [2022-12-22T00:02:04.600522 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.600573 #74430]  INFO -- Kitchen: #8 [ 5/16] RUN [ -f "/etc/ssh/ssh_host_dsa_key" ] || ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2022-12-22T00:02:04.600616 #74430]  INFO -- Kitchen: #8 sha256:2959426e69d487ed75d82712586b2a68a15d66fafb9b787b8f68b18d038a8edd
+I, [2022-12-22T00:02:04.600650 #74430]  INFO -- Kitchen: #8 CACHED
+I, [2022-12-22T00:02:04.600681 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.600717 #74430]  INFO -- Kitchen: #13 [10/16] RUN chown -R kitchen /home/kitchen/.ssh
+I, [2022-12-22T00:02:04.600753 #74430]  INFO -- Kitchen: #13 sha256:8dc897ece071a920bc22d2c4be8deecb6fc442e71fecc74dd25ee0f54d2b0af4
+I, [2022-12-22T00:02:04.600789 #74430]  INFO -- Kitchen: #13 CACHED
+I, [2022-12-22T00:02:04.600825 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.600863 #74430]  INFO -- Kitchen: #7 [ 4/16] RUN [ -f "/etc/ssh/ssh_host_rsa_key" ] || ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2022-12-22T00:02:04.600900 #74430]  INFO -- Kitchen: #7 sha256:a4e017853c8de9cf33d0c436022d866fa34beb5e5303a2b8de874dce0fc33402
+I, [2022-12-22T00:02:04.600934 #74430]  INFO -- Kitchen: #7 CACHED
+I, [2022-12-22T00:02:04.600965 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.600999 #74430]  INFO -- Kitchen: #6 [ 3/16] RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2022-12-22T00:02:04.601038 #74430]  INFO -- Kitchen: #6 sha256:3f12524a0bcbe025717edb862db0c0889f35cd624f7241edab5966ad14395490
+I, [2022-12-22T00:02:04.601080 #74430]  INFO -- Kitchen: #6 CACHED
+I, [2022-12-22T00:02:04.601138 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.601176 #74430]  INFO -- Kitchen: #5 [ 2/16] RUN yum clean all
+I, [2022-12-22T00:02:04.601219 #74430]  INFO -- Kitchen: #5 sha256:4506dddf18c320b554a1b50da71d7ba676e1572e76a2c4e588009867e40b8037
+I, [2022-12-22T00:02:04.601257 #74430]  INFO -- Kitchen: #5 CACHED
+I, [2022-12-22T00:02:04.601296 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.601332 #74430]  INFO -- Kitchen: #17 [14/16] RUN chmod 0600 /home/kitchen/.ssh/authorized_keys
+I, [2022-12-22T00:02:04.601366 #74430]  INFO -- Kitchen: #17 sha256:f90caa476b845d51e2993b575460bb6c0531e8ee134d1953428182b394e57988
+I, [2022-12-22T00:02:04.601409 #74430]  INFO -- Kitchen: #17 CACHED
+I, [2022-12-22T00:02:04.601445 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.601482 #74430]  INFO -- Kitchen: #18 [15/16] RUN mkdir -p /run/sshd
+I, [2022-12-22T00:02:04.601513 #74430]  INFO -- Kitchen: #18 sha256:3a421fe5827c2b3e9c9c71eac2cf64e5b4faef8b592f685f01da1b7274865c9f
+I, [2022-12-22T00:02:04.601545 #74430]  INFO -- Kitchen: #18 CACHED
+I, [2022-12-22T00:02:04.601575 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.601614 #74430]  INFO -- Kitchen: #19 [16/16] RUN echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3gMZHg9tr0J4caNvKoQBRtEn63ePPAF4cX1LsKeK873aXtAN1ABQaWX0ge79JH2bk4Q2BUUUDDHB6vPe/FwDRZZC8IOOafXqsj5Mw0Z1Y7280jCajx73bruU6HDh0A5g3uClNeCwmcVyMEbbVKk/MBIElL8jKJW4qBs0DzpowpBa0Be53KIPUfT31qtrfhf02fY8jjHmXlxVIxbJHMK9eIllZyL6obzU7pymBHYcBCEpsAh5jwICmiaYPdDxJIZdF14JLkcPIsNWQsR0bX6ZIhrc9gyYRIz3aRX3RtMKAZMLW3zqsW4Z074VSkvzfhLrX7pOD51VEYOhhz8vEyhS5 kitchen_docker_key >> /home/kitchen/.ssh/authorized_keys
+I, [2022-12-22T00:02:04.601656 #74430]  INFO -- Kitchen: #19 sha256:f5959ce8812865df7ebd126fe2449a8914905aa58113f1a909d8c1b65c1e4e47
+I, [2022-12-22T00:02:04.874139 #74430]  INFO -- Kitchen: #19 DONE 0.4s
+I, [2022-12-22T00:02:04.897839 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.898055 #74430]  INFO -- Kitchen: #20 exporting to image
+I, [2022-12-22T00:02:04.898119 #74430]  INFO -- Kitchen: #20 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+I, [2022-12-22T00:02:04.898264 #74430]  INFO -- Kitchen: #20 exporting layers 0.0s done
+I, [2022-12-22T00:02:04.898340 #74430]  INFO -- Kitchen: #20 writing image sha256:48cb068f9e34e19365e4a7d913c9f56a7a129f0a71b9a77606c7d10f984948e9 done
+I, [2022-12-22T00:02:04.898381 #74430]  INFO -- Kitchen: #20 DONE 0.0s
+I, [2022-12-22T00:02:04.982518 #74430]  INFO -- Kitchen: 
+I, [2022-12-22T00:02:04.982582 #74430]  INFO -- Kitchen: Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+I, [2022-12-22T00:02:05.100826 #74430]  INFO -- Kitchen: bef49a74a14b0b3769843659b90f3d2ecb0f02eefee78b4531a3c0641883b774
+I, [2022-12-22T00:02:05.482421 #74430]  INFO -- Kitchen: 0.0.0.0:58583
+I, [2022-12-22T00:02:05.949402 #74430]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+E, [2022-12-22T00:02:06.786603 #74430] ERROR -- Kitchen: ------Exception-------
+E, [2022-12-22T00:02:06.786624 #74430] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-12-22T00:02:06.786635 #74430] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Failed to complete #converge action: [Expected process to exit with [0], but received '1'
+---- Begin output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+STDOUT: 
+STDERR: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:86:in `block in materialize': Could not find racc-1.6.1 in any of the sources (Bundler::GemNotFound)
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `map!'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `materialize'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:170:in `specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:237:in `specs_for'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:226:in `requested_specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:101:in `block in definition_method'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:20:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler.rb:149:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `block in <top (required)>'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:136:in `with_level'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:88:in `silence'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `<top (required)>'
+	from /usr/local/bin/chef-cli:in `require'
+---- End output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+Ran /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist returned 1] on default-centos-71
+E, [2022-12-22T00:02:06.786647 #74430] ERROR -- Kitchen: ----------------------
+E, [2022-12-22T00:02:06.786656 #74430] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-12-22T00:02:06.786665 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:181:in `report_errors'
+E, [2022-12-22T00:02:06.786674 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:172:in `run_action'
+E, [2022-12-22T00:02:06.786683 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2022-12-22T00:02:06.786691 #74430] ERROR -- Kitchen: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-12-22T00:02:06.786700 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command/action.rb:33:in `call'
+E, [2022-12-22T00:02:06.786730 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2022-12-22T00:02:06.786745 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/cli.rb:198:in `block (2 levels) in <class:CLI>'
+E, [2022-12-22T00:02:06.786754 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2022-12-22T00:02:06.786763 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2022-12-22T00:02:06.786771 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2022-12-22T00:02:06.786780 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2022-12-22T00:02:06.786788 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/bin/kitchen:11:in `block in <top (required)>'
+E, [2022-12-22T00:02:06.786797 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/errors.rb:183:in `with_friendly_errors'
+E, [2022-12-22T00:02:06.786805 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/bin/kitchen:11:in `<top (required)>'
+E, [2022-12-22T00:02:06.786813 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/bin/kitchen:23:in `load'
+E, [2022-12-22T00:02:06.786822 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/bin/kitchen:23:in `<main>'
+E, [2022-12-22T00:02:06.786832 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/bin/ruby_executable_hooks:22:in `eval'
+E, [2022-12-22T00:02:06.786841 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/bin/ruby_executable_hooks:22:in `<main>'
+E, [2022-12-22T00:02:06.786850 #74430] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-12-22T00:02:06.786858 #74430] ERROR -- Kitchen: -Composite Exception--
+E, [2022-12-22T00:02:06.786866 #74430] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-12-22T00:02:06.786874 #74430] ERROR -- Kitchen: Message: Failed to complete #converge action: [Expected process to exit with [0], but received '1'
+---- Begin output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+STDOUT: 
+STDERR: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:86:in `block in materialize': Could not find racc-1.6.1 in any of the sources (Bundler::GemNotFound)
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `map!'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `materialize'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:170:in `specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:237:in `specs_for'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:226:in `requested_specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:101:in `block in definition_method'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:20:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler.rb:149:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `block in <top (required)>'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:136:in `with_level'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:88:in `silence'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `<top (required)>'
+	from /usr/local/bin/chef-cli:in `require'
+---- End output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+Ran /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist returned 1] on default-centos-71
+E, [2022-12-22T00:02:06.786894 #74430] ERROR -- Kitchen: ----------------------
+E, [2022-12-22T00:02:06.786903 #74430] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-12-22T00:02:06.786911 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-12-22T00:02:06.786920 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-12-22T00:02:06.786928 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/policyfile.rb:81:in `compile'
+E, [2022-12-22T00:02:06.786936 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:296:in `block in update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.786945 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `synchronize'
+E, [2022-12-22T00:02:06.786954 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.786962 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:274:in `prepare_json'
+E, [2022-12-22T00:02:06.786970 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:45:in `populate'
+E, [2022-12-22T00:02:06.786978 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_base.rb:308:in `create_sandbox'
+E, [2022-12-22T00:02:06.786987 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_infra.rb:49:in `create_sandbox'
+E, [2022-12-22T00:02:06.786995 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/base.rb:72:in `call'
+E, [2022-12-22T00:02:06.787003 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-12-22T00:02:06.787012 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-12-22T00:02:06.787020 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-12-22T00:02:06.787029 #74430] ERROR -- Kitchen: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-12-22T00:02:06.787037 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:523:in `action'
+E, [2022-12-22T00:02:06.787046 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-12-22T00:02:06.787054 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-12-22T00:02:06.787062 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-12-22T00:02:06.787070 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-12-22T00:02:06.787078 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `each'
+E, [2022-12-22T00:02:06.787086 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-12-22T00:02:06.787094 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2022-12-22T00:02:06.787108 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-12-22T00:02:06.787116 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-12-22T00:02:06.787124 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-12-22T00:02:06.787132 #74430] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-12-22T00:02:06.787140 #74430] ERROR -- Kitchen: ---Nested Exception---
+E, [2022-12-22T00:02:06.787148 #74430] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-12-22T00:02:06.787156 #74430] ERROR -- Kitchen: Message: Failed to complete #converge action: [Expected process to exit with [0], but received '1'
+---- Begin output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+STDOUT: 
+STDERR: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:86:in `block in materialize': Could not find racc-1.6.1 in any of the sources (Bundler::GemNotFound)
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `map!'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/spec_set.rb:80:in `materialize'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:170:in `specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:237:in `specs_for'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/definition.rb:226:in `requested_specs'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:101:in `block in definition_method'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/runtime.rb:20:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler.rb:149:in `setup'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `block in <top (required)>'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:136:in `with_level'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/ui/shell.rb:88:in `silence'
+	from /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/bundler/setup.rb:20:in `<top (required)>'
+	from /usr/local/bin/chef-cli:in `require'
+---- End output of /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist ----
+Ran /usr/local/bin/chef-cli install /Users/rod/a/kitchen-issue/my_cookbook/Policyfile.rb --chef-license accept-no-persist returned 1]
+E, [2022-12-22T00:02:06.787165 #74430] ERROR -- Kitchen: ----------------------
+E, [2022-12-22T00:02:06.787192 #74430] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-12-22T00:02:06.787200 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-12-22T00:02:06.787209 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-12-22T00:02:06.787218 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/policyfile.rb:81:in `compile'
+E, [2022-12-22T00:02:06.787226 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:296:in `block in update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.787237 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `synchronize'
+E, [2022-12-22T00:02:06.787245 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:295:in `update_dna_for_policyfile'
+E, [2022-12-22T00:02:06.787259 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:274:in `prepare_json'
+E, [2022-12-22T00:02:06.787267 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef/common_sandbox.rb:45:in `populate'
+E, [2022-12-22T00:02:06.787277 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_base.rb:308:in `create_sandbox'
+E, [2022-12-22T00:02:06.787286 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/chef_infra.rb:49:in `create_sandbox'
+E, [2022-12-22T00:02:06.787294 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/provisioner/base.rb:72:in `call'
+E, [2022-12-22T00:02:06.787302 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-12-22T00:02:06.787310 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-12-22T00:02:06.787318 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-12-22T00:02:06.787326 #74430] ERROR -- Kitchen: /Users/rod/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-12-22T00:02:06.787334 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:523:in `action'
+E, [2022-12-22T00:02:06.787342 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-12-22T00:02:06.787350 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-12-22T00:02:06.787358 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-12-22T00:02:06.787366 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-12-22T00:02:06.787375 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `each'
+E, [2022-12-22T00:02:06.787383 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-12-22T00:02:06.787391 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2022-12-22T00:02:06.787399 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-12-22T00:02:06.787407 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-12-22T00:02:06.787417 #74430] ERROR -- Kitchen: /Users/rod/.rvm/gems/ruby-2.7.4@my-gemset/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-12-22T00:02:06.787425 #74430] ERROR -- Kitchen: ----End Backtrace-----
